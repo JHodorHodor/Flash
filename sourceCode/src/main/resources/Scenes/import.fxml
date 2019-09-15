@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+        <Button fx:id="back" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#goBack" styleClass="buttonGray" text="Back" />
+      <ListView fx:id="fromDatabase" layoutX="50.0" layoutY="100.0" prefHeight="400.0" prefWidth="340.0" styleClass="text13" />
+      <ListView fx:id="toImport" layoutX="420.0" layoutY="100.0" prefHeight="400.0" prefWidth="340.0" styleClass="text13" />
+      <Button fx:id="add" layoutX="185.0" layoutY="539.0" mnemonicParsing="false" onAction="#add" styleClass="buttonBlue" text="Add" />
+      <Button fx:id="submit" layoutX="353.0" layoutY="698.0" mnemonicParsing="false" onAction="#submit" styleClass="buttonGreen" text="Submit" />
+      <Button fx:id="remove" layoutX="539.0" layoutY="539.0" mnemonicParsing="false" onAction="#remove" styleClass="buttonOrange" text="Remove" />
+      <Button fx:id="addAll" layoutX="173.0" layoutY="595.0" mnemonicParsing="false" onAction="#addAll" styleClass="buttonBlue" text="Add All" />
+    </children>
+
+    <stylesheets>
+        <URL value="@../Css/Global.css" />
+    </stylesheets>
+</AnchorPane>

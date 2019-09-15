@@ -1,0 +1,417 @@
+#mainPane {
+    -fx-background-image: url("../Images/background.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.mainPane {
+    -fx-background-image: url("../Images/background.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.textC7 {
+    -fx-font-family: "C7nazara";
+}
+
+.text20 {
+    -fx-font-size: 20px;
+}
+
+.text13 {
+    -fx-font-size: 13px;
+}
+
+.textWrap {
+    -fx-word-wrap:break-word
+}
+
+.aliCenter {
+}
+
+.textFieldOrange {
+    -fx-background-color: rgba(255, 153, 1, 0.5);
+    -fx-text-fill: #000000;
+    -fx-background-radius: 30;
+}
+
+.textFieldBlue {
+    -fx-background-color: rgba(3, 107, 226, 0.5);
+    -fx-text-fill: #000000;
+    -fx-background-radius: 30;
+}
+
+
+#languageList {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-background-radius: 30;
+}
+
+#languageList .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+    -fx-alignment: center ;
+}
+
+#languageList .list-cell:filled:hover {
+    -fx-text-fill: #4098fc;
+
+}
+
+#languageList .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-text-fill: #0477fb;
+
+}
+
+#fromDatabase {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-background-radius: 30;
+}
+
+#fromDatabase .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+}
+
+#fromDatabase .list-cell:filled:hover {
+    -fx-text-fill: #3385ff;
+
+}
+
+#fromDatabase .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-text-fill: #0047b3;
+
+}
+
+#toImport {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-background-radius: 30;
+}
+
+#toImport .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+}
+
+#toImport .list-cell:filled:hover {
+    -fx-text-fill: #ff9900;
+
+}
+
+#toImport .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-text-fill: #b36b00;
+
+}
+
+#list {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-background-radius: 30;
+}
+
+#list .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+}
+
+#list .list-cell:filled:hover {
+    -fx-text-fill: #3385ff;
+
+}
+
+#list .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-text-fill: #0047b3;
+
+}
+
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+.scroll-bar:vertical .track
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:vertical .thumb{
+    -fx-background-color: white;
+    -fx-background-radius: 4em;
+}
+
+.scroll-bar:vertical .increment-arrow, .decrement-arrow {
+ -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal{
+    -fx-background-color:transparent;
+}
+.scroll-bar:horizontal .track
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb{
+    -fx-background-color: white;
+    -fx-background-radius: 4em;
+}
+
+.scroll-bar:horizontal .increment-arrow, .decrement-arrow {
+ -fx-background-color: transparent;
+}
+
+
+.slider .track {
+    -fx-background-color: #33cc33;
+    -fx-background-insets: 1 0 -1 0, 0, 1;
+    -fx-background-radius: 2.5, 2.5, 1.5;
+    -fx-padding: 0.208333em;
+}
+
+.slider .thumb {
+     -fx-background-color: #0066ff;
+     -fx-padding: 8 8 8 8;
+}
+
+.slider .thumb:hover{
+     -fx-background-color: #99c2ff;
+     -fx-padding: 8 8 8 8;
+}
+
+.buttonOrange {
+    -fx-background-color:
+        linear-gradient(#ff9901, #b36b00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonOrange:hover {
+    -fx-background-color:
+        linear-gradient(#b36b00, #ff9901);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonBlue {
+    -fx-background-color:
+        linear-gradient(#4098fc, #036be2);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonBlue:hover {
+    -fx-background-color:
+        linear-gradient(#036be2, #4098fc);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonGray {
+    -fx-background-color:
+        linear-gradient(#a3a3c2, #5c5c8a);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonGray:hover {
+    -fx-background-color:
+        linear-gradient(#5c5c8a, #a3a3c2);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonGreen {
+    -fx-background-color:
+        linear-gradient(#33cc33, #1a651a);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonGreen:hover {
+    -fx-background-color:
+        linear-gradient(#1a651a, #33cc33);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonRed {
+    -fx-background-color:
+        linear-gradient(#ff3300, #801a00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonRed:hover {
+    -fx-background-color:
+        linear-gradient(#801a00, #ff3300);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonBlueNF {
+    -fx-background-color:
+        linear-gradient(#4098fc, #036be2);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000000;
+    -fx-font-size: 13px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonBlueNF:hover {
+    -fx-background-color:
+        linear-gradient(#036be2, #4098fc);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonGrayT {
+    -fx-background-color:
+        linear-gradient(#a3a3c2, #5c5c8a);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonGrayT:hover {
+    -fx-background-color:
+        linear-gradient(#5c5c8a, #a3a3c2);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonGrayT:selected {
+    -fx-background-color:
+        linear-gradient(#d9d9d9, #b3b3b3);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-family: "C7nazara";
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonOrangeT {
+    -fx-background-color:
+        linear-gradient(#ff9901, #b36b00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonOrangeT:hover {
+    -fx-background-color:
+        linear-gradient(#b36b00, #ff9901);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.buttonOrangeT:selected {
+    -fx-background-color:
+        linear-gradient(#b36b00, #000000);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 7 15 7 15;
+}
+
+.text-area .content {
+    -fx-background-color: rgba(255, 153, 1, 0.5);
+    -fx-text-fill: #000000;
+    -fx-background-radius: 30;
+}
+
+.gridPane {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-background-radius: 30;
+}
+
+
+.radius{
+
+    -fx-background-radius: 30;}
+
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
