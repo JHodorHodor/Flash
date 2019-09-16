@@ -365,7 +365,7 @@
 
 .buttonOrangeT {
     -fx-background-color:
-        linear-gradient(#ff9901, #b36b00);
+        linear-gradient(#b36b00, #000000);
     -fx-background-radius: 30;
     -fx-background-insets: 0,1,2,3,0;
     -fx-text-fill: #000000;
@@ -387,7 +387,7 @@
 
 .buttonOrangeT:selected {
     -fx-background-color:
-        linear-gradient(#b36b00, #000000);
+        linear-gradient(#000000, #b36b00);
     -fx-background-radius: 30;
     -fx-background-insets: 0,1,2,3,0;
     -fx-text-fill: #000000;
