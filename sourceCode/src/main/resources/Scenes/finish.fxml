@@ -16,11 +16,11 @@
                 <Font size="28.0" />
             </font>
         </Text>
-      <Text fx:id="ratio" fill="WHITE" layoutX="654.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="?/?" textAlignment="CENTER" wrappingWidth="96.00000381469727">
+      <Text fx:id="ratio" fill="WHITE" layoutX="625.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="?/?" textAlignment="CENTER" wrappingWidth="152.99999713897705">
          <font>
             <Font size="30.0" />
          </font></Text>
-      <Text fx:id="percent" fill="WHITE" layoutX="654.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="? %" textAlignment="CENTER" wrappingWidth="96.00000381469727">
+      <Text fx:id="percent" fill="WHITE" layoutX="625.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="? %" textAlignment="CENTER" wrappingWidth="153.00000381469727">
          <font>
             <Font size="30.0" />
          </font></Text>

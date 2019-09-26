@@ -206,11 +206,17 @@ public class ControllerPractice extends Controller implements Initializable {
             setProgress();
             outcome.setVisible(false);
             if(result && mode != 0) info.setState(state + 1);
+            if(result && mode == 0 && info.getState() == 15){
+                String history = info.getHistory();
+                if(history.length() >= 8)
+                    if(history.substring(history.length() - 8).equals("00000000"))
+                        info.setState(16);
+            }
             if(!result){
                 if(state == 10)
                     info.setState(2);
                 else if(state == 14)
-                    info.setState(1);
+                    info.setState(3);
                 else if(state > 14)
                     info.setState(3);
             }

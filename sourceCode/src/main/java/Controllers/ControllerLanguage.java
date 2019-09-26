@@ -65,7 +65,8 @@ public class ControllerLanguage extends Controller implements Initializable {
             sliderText2.setText("(" + cardsNumber + ")");
         }));
 
-        slider.setMax(allCards.get(0).size());
+        slider.setMax(allCards.get(0).size() + allCards.get(1).size());
+        slider.setMin(allCards.get(1).size());
 
     }
 
@@ -132,11 +133,10 @@ public class ControllerLanguage extends Controller implements Initializable {
         for (int i = 0; i < 17; i++) {
             if ((i > 0 && i < 7) || i == 10 || i == 14) cardsNumber += allCards.get(i).size();
         }
-        transfer = Integer.min(allCards.get(0).size(), value);
-        randomSuper = Integer.min(allCards.get(16).size(), value / 5);
-        randomRegular = Integer.min(allCards.get(15).size(),value - randomSuper);
+        transfer = Integer.min(allCards.get(0).size() + allCards.get(1).size(), value) - allCards.get(1).size();
+        randomSuper = Integer.min(allCards.get(16).size(), value / 15);
+        randomRegular = Integer.min(allCards.get(15).size(),value / 7 - randomSuper);
         cardsNumber += (transfer + randomRegular + randomSuper);
-
     }
 
     @FXML
