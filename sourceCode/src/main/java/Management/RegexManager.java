@@ -87,4 +87,13 @@ public class RegexManager {
     static Image setImage(String name, Object o){
         return new Image(o.getClass().getResourceAsStream(Launcher.imagesLocation + name + ".png"));
     }
+
+    public static boolean isGood(String history){
+        String check = history.substring(history.length() - 8);
+        char[] arr = check.toCharArray();
+        for(char c : arr)
+            if(c != '1' && c != '3')
+                return false;
+        return true;
+    }
 }

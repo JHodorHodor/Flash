@@ -175,7 +175,9 @@ public class ControllerPractice extends Controller implements Initializable {
 
     private void practiceRegularCard(int state, int mode, LinkedList<Integer> list) { //1 pol->orig, 2 orig->pol, 0 random
         Collections.shuffle(list);
+        System.out.println(list);
         for (Integer id : list) {
+            System.out.println(id);
             answer.setText("");
             currentWord = id;
             WordType word = Launcher.words.get(id);
@@ -207,10 +209,8 @@ public class ControllerPractice extends Controller implements Initializable {
             outcome.setVisible(false);
             if(result && mode != 0) info.setState(state + 1);
             if(result && mode == 0 && info.getState() == 15){
-                String history = info.getHistory();
-                if(history.length() >= 8)
-                    if(history.substring(history.length() - 8).equals("00000000"))
-                        info.setState(16);
+                if(RegexManager.isGood(info.getHistory()))
+                    info.setState(16);
             }
             if(!result){
                 if(state == 10)

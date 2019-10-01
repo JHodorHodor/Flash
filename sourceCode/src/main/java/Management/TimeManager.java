@@ -24,7 +24,8 @@ public class TimeManager {
     private static LinkedList<Calendar> cut(LinkedList<Calendar> list, int bound, boolean noBound) {
         LinkedList<Calendar> result = new LinkedList<>();
         Calendar calendar = getCurrentDate();
-        calendar.add(Calendar.DAY_OF_MONTH, (-1) * bound + (noBound ? 0 : 1));
+        if(noBound) return list;
+        calendar.add(Calendar.DAY_OF_MONTH, (-1) * bound + 1);
 
 
         if(list.size() == 1){
@@ -141,7 +142,7 @@ public class TimeManager {
         sort(dates);
 
         int i = -1;
-        boolean noBound = Integer.MAX_VALUE == bound;
+        boolean noBound = (Integer.MAX_VALUE == bound);
         bound = Integer.min(bound, dates.size());
         Calendar calendar = getCurrentDate();
         Calendar calendar1 = getCurrentDate();
@@ -219,7 +220,7 @@ public class TimeManager {
     }
 
     public static Integer getTtimeDaily(String loginDB, String languageDB, int bound){
-        return getTtime(loginDB, languageDB, bound) / bound;
+        return getTtime(loginDB, languageDB, bound) / cut(StatsType.getDates(loginDB, languageDB), bound, false).size();
     }
 
 }

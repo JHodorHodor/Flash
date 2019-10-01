@@ -62,7 +62,7 @@ public class ControllerStats extends Controller implements Initializable {
         gridInfoManager.setPane("Words\nPracticed", 3, 0);
         gridInfoManager.setPane("Words\nPracticed\nDaily", 4, 0);
         gridInfoManager.setPane("Time\nSpent", 5, 0);
-        gridInfoManager.setPane("Time\nSpent\nDaily", 6, 0);
+        gridInfoManager.setPane("Average\nPractice", 6, 0);
 
         gridInfoManager.setPane("All Time:", 0, 1);
         gridInfoManager.setPane("Last Year:", 0, 2);
